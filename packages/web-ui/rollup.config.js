@@ -26,7 +26,7 @@ export default globby.sync('./src/**/*.js').map(inputFile => ({
   input: inputFile,
   output: {
     file: inputFile.replace('/src', ''),
-    format: 'es',
+    format: 'cjs',
     sourcemap: dev,
   },
   plugins,

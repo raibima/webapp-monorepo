@@ -21,7 +21,7 @@ export default class Text extends Component {
   }
 
   render() {
-    return <span>{this.props.children}</span>;
+    return <span style={this.state.style}>{this.props.children}</span>;
   }
 }
 

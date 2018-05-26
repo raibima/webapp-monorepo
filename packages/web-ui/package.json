@@ -5,15 +5,16 @@
   "module": "index.esm.js",
   "license": "MIT",
   "scripts": {
-    "start": "run-p watch storybook",
-    "watch": "yarn compile -- -w",
-    "compile": "rollup -c",
+    "start": "NODE_ENV=development run-p watch storybook",
+    "watch": "NODE_ENV=development yarn compile -- -w",
+    "compile": "NODE_ENV=development rollup -c",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build": "NODE_ENV=production rollup -c"
   },
   "devDependencies": {
     "@storybook/react": "^3.4.5",
     "babel-core": "^6.26.3",
+    "babel-plugin-autobind-class-methods": "^5.0.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-react-app": "^3.1.1",
     "globby": "^8.0.1",

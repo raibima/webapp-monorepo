@@ -30,8 +30,9 @@ export default class Button extends Component {
     return null;
   }
 
-  handleClick = (...args) => {
-    alert('hello world wohoo');
+  handleClick(...args) {
+    // insert tracking here...
+    args[0].preventDefault();
     if (typeof this.props.onClick === 'function') {
       this.props.onClick();
     }
