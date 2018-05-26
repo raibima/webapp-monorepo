@@ -1,0 +1,16 @@
+{
+  "name": "wwwlet",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development run-p start:*",
+    "start:web": "cd packages/nodejs-web && yarn start",
+    "start:ui": "cd packages/web-ui && yarn start",
+    "lerna": "lerna"
+  },
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  },
+  "workspaces": ["packages/*"],
+  "private": true
+}

@@ -1,0 +1,7 @@
+node_modules
+lerna-debug.log
+
+# web-ui dist files
+packages/web-ui/desktop
+packages/web-ui/mobile
+packages/web-ui/shared

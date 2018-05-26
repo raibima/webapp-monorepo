@@ -1,0 +1,10 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/packages/nodejs-web/build": true,
+    "**/packages/web-ui/desktop": true,
+    "**/packages/web-ui/mobile": true,
+    "**/packages/web-ui/shared": true
+  }
+}
